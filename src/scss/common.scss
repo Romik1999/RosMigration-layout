@@ -1,0 +1,77 @@
+@import "./vars";
+
+body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+  color: $black;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+
+  background: radial-gradient(39.74% 81.6% at 70.68% 31.27%, #FFAEAE 0%, #BABABA 100%) center / contain no-repeat;
+
+  @media screen and (max-width: 995px) {
+    font-size: 16px;
+  }
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  position: relative;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 995px) {
+    padding: 20px;
+  }
+}
+
+.cont {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and (max-width: 995px) {
+    max-width: 832px;
+  }
+}
+
+input {
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid blue;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1001px) {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 769px) {
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 425px) {
+}
+
+@media screen and (max-width: 350px) {
+}

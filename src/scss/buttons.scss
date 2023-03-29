@@ -1,0 +1,36 @@
+@import "./src/scss/vars";
+
+.btn {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+
+  padding: 10px 20px;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &--pink {
+    background: $pink;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.28);
+    color: $white;
+
+    &:hover{
+    }
+  }
+
+  &--transparent{
+    &:hover{
+
+    }
+  }
+}

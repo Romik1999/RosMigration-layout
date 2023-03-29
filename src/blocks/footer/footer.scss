@@ -1,0 +1,32 @@
+@import "./src/scss/vars";
+
+.footer {
+  padding: 10px 30px;
+
+  font-size: 18px;
+  line-height: 120%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #2D2D2D;
+
+  text-align: center;
+
+  @media screen and (max-width: 995px) {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

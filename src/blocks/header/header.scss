@@ -1,3 +1,45 @@
-.header {
+@import "./src/scss/vars";
 
+.header {
+  padding: 25px 30px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+    position: relative;
+  }
+
+  &__logo,
+  &__text,
+  &__button {
+    max-width: 33.33%;
+    width: 100%;
+    display: flex;
+  }
+
+  &__logo {
+    justify-content: flex-start;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: $black;
+    justify-content: center;
+  }
+
+  &__button {
+    justify-content: flex-end;
+  }
+
+  &-button {
+    max-width: 400px;
+
+    & img {
+      display: none;
+    }
+  }
 }

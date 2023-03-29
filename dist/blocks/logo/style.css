@@ -1,0 +1,14 @@
+.logo {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #2D2D2D;
+}
+
+.logo__item:nth-child(1) {
+  color: #2D2D2D;
+}
+
+.logo__item:nth-child(2) {
+  color: #C24B4B;
+}
