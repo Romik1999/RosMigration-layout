@@ -12,3 +12,15 @@
 .logo__item:nth-child(2) {
   color: #C24B4B;
 }
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .logo {
+    font-size: 32px;
+  }
+}

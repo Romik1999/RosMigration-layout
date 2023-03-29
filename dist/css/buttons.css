@@ -32,3 +32,24 @@
           box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.28);
   color: #FFFFFF;
 }
+
+.btn--pink:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.28);
+          box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.28);
+  color: #2D2D2D;
+}
+
+@media screen and (max-width: 995px) {
+  .btn {
+    height: 55px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    height: 50px;
+  }
+}
