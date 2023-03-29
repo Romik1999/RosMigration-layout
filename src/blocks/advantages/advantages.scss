@@ -40,6 +40,29 @@
     &--column {
       flex-direction: column;
       row-gap: 40px;
+
+      @media screen and (max-width: 769px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+      }
+
+      & .advantages__item {
+        @media screen and (max-width: 768px) {
+          width: calc(50% - 10px);
+        }
+
+        @media screen and (max-width: 576px) {
+          width: 100%;
+          max-width: 220px;
+        }
+      }
     }
   }
 
