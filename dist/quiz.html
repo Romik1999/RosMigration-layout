@@ -39,10 +39,14 @@
 <main class="main">
     <section class="quiz">
     <div class="cont">
+        <div class="quiz__title">
+            <span>Отсрочка военнообязанным</span>
+            <span>Помощь по миграционным вопросам</span>
+        </div>
         <div class="quiz__wrapper">
             <div class="quiz__info">
                 <div class="quiz__questions">
-                    <div class="quiz__question" data-question="1">
+                    <div class="quiz__question quiz__question--active" data-question="1">
                         <div class="quiz-question">
                             <div class="quiz-question__title">Гражданином какой страны вы являетесь?</div>
                             <div class="quiz-question__field">
@@ -169,7 +173,7 @@
                     </div>
                 </div>
                 <div class="quiz__buttons">
-                    <div class="quiz__button btn btn--transparent">Назад</div>
+                    <div class="quiz__button btn btn--border"></div>
                     <div class="quiz__button btn btn--pink">Далее</div>
                 </div>
             </div>
@@ -226,7 +230,7 @@
         </div>
         <div class="quiz__progress">
             <div class="quiz-progress">
-                <span class="quiz-progress__fill"></span>
+                <span class="quiz-progress__fill" style="width: 25%"></span>
             </div>
         </div>
     </div>
