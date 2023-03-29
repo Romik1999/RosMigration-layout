@@ -13,7 +13,26 @@
 <body>
 
 
-@@include('header/header.html')
+<header class="header">
+    <div class="cont">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <div class="logo">
+                    <span>Рос</span>
+                    <span>Миграция</span>
+                </div>
+            </div>
+            <div class="header__text">
+                Центр поддержки мигрантов в России<br>
+                Помощь в оформлении документов
+            </div>
+            <button class="header__button btn btn--pink">
+                <img src="./img/phone.svg">
+                Бесплатная консультация
+            </button>
+        </div>
+    </div>
+</header>
 <main class="main">
     <section class="promo">
         <div class="cont">
@@ -90,8 +109,17 @@
         </div>
     </section>
 </main>
-@@include('footer/footer.html')
-@@include('popup/popup.html')
+<footer class="footer">
+    <div class="cont">
+        <a class="footer__link" href="#">Политика конфиденциальности.</a>
+        <div class="footer__text">
+            ИП Гусейнов Гудрат Раиз Оглы ИНН: 772626712435 ОГРН: 322774600316231 г. Москва, ул. Чертановская д.43, корп. 2
+        </div>
+    </div>
+</footer>
+<div class="popup ">
+
+</div>
 
 <script type="text/javascript" src="libs/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="libs/swiper/swiper-bundle.min.js"></script>

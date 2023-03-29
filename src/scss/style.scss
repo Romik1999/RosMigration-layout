@@ -1,9 +1,4 @@
-@import 'null';
-@import 'vars';
-@import 'global';
-@import 'interface';
+@import "./vars";
 
 @import '../blocks/header/header';
-@import '../blocks/hero/hero';
-@import '../blocks/tarif/tarif';
 @import '../blocks/popup/popup';
