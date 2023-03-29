@@ -7,6 +7,34 @@
     &--row {
       justify-content: space-between;
       column-gap: 30px;
+
+      @media screen and (max-width: 995px) {
+        column-gap: 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+
+      @media screen and (max-width: 576px) {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        row-gap: 30px;
+      }
+
+      & .advantages__item {
+        @media screen and (max-width: 768px) {
+          width: calc(50% - 10px);
+        }
+
+        @media screen and (max-width: 576px) {
+          width: 100%;
+          max-width: 220px;
+        }
+      }
     }
 
     &--column {
@@ -24,9 +52,39 @@
     align-items: center;
     column-gap: 16px;
 
+    @media screen and (max-width: 995px) {
+      column-gap: 10px;
+    }
+
     &__icon {
+      min-width: 90px;
       width: 90px;
       height: 90px;
+      display: flex;
+
+      @media screen and (max-width: 1199px) {
+        min-width: 75px;
+        width: 75px;
+        height: 75px;
+      }
+
+      @media screen and (max-width: 995px) {
+        min-width: 66px;
+        width: 66px;
+        height: 66px;
+      }
+
+      @media screen and (max-width: 576px) {
+        min-width: 75px;
+        width: 75px;
+        height: 75px;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
 
     &__title {
@@ -34,6 +92,18 @@
       font-size: 20px;
       line-height: 120%;
       font-feature-settings: 'pnum' on, 'lnum' on;
+
+      @media screen and (max-width: 1199px) {
+        font-size: 18px;
+      }
+
+      @media screen and (max-width: 995px) {
+        font-size: 15px;
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: 18px;
+      }
     }
   }
 }
