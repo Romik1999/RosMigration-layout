@@ -123,7 +123,7 @@
   display: block;
   position: relative;
   max-width: 405px;
-  width: 100%;
+  width: calc(50% - 10px);
   cursor: pointer;
 }
 
@@ -388,6 +388,10 @@
 
   .quiz-question__fields {
     gap: 10px;
+  }
+
+  .quiz-question__field {
+    width: 100%;
   }
 
   .quiz-question__span {
