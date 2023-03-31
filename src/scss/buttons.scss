@@ -45,8 +45,20 @@
     //background: linear-gradient(180deg, #EA9999 2.67%, #2D2D2D 137.2%);
     padding: 3px;
 
+    background-image: url("../img/button.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
     @media screen and (max-width: 995px) {
       padding: 3px;
+    }
+
+    @media screen and (max-width: 576px) {
+      background-image: url("../img/button-mobile.svg");
+    }
+
+    @media screen and (max-width: 420px) {
+      background-image: url("../img/button-mobile-2.svg");
     }
 
     & svg,
@@ -92,7 +104,8 @@
         opacity: 1;
       }
 
-      & svg {
+      & svg,
+      & img{
         opacity: 0;
       }
     }
